@@ -1,6 +1,6 @@
 import fs from "fs/promises"
 export const writereport=()=>{
-    try{
+    try{  
         const reports=[{id:13}]
         let reportslist=JSON.stringify(reports)
         fs.writeFile("./reportsList.json",reportslist,"utf-8",(reportslist)=>{consle.log(reportslist)})

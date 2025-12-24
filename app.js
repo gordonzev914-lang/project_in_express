@@ -13,7 +13,7 @@ app.post('/',(req,res)=>{
     res.send(result)
 })
 
-app.get('/a',async(req,res)=>{
+app.get('/',async(req,res)=>{
     console.log("hy")
     const result=await readAgent()
     console.log("hy2")
